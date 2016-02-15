@@ -5,7 +5,8 @@ SankeySample <- read.csv("IXRS_StudySubjectData.csv")
 glimpse(SankeySample)
 
 # Code up standard starts and stop values (that aren't cleaving to the cycle day count system)
-GenericVisitLookupTable <- c("Screening" = 0, "Rescreening 1" = 0.1, "Enrollment" = 1, "Screen Failure" = 999, "Discontinuation from Study Tx" = 9999)
+GenericVisitLookupTable <- c("Screening" = 0, "Rescreening 1" = 0.1, "Enrollment" = 1,
+                             "Screen Failure" = 62, "Discontinuation from Study Tx" = 64)
 
 # Create "nodes" dataframe
 SankeyVisitCodeMap <- 
